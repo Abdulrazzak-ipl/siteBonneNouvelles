@@ -7,9 +7,8 @@ class Db
     private function __construct()
     {
         try {
-            $this->_db = new PDO('pgsql:. sprintf(
-    "host=ec2-34-251-245-108.eu-west-1.compute.amazonaws.com;port=5432;user=lcoyccnvahtbku;password=1d797f1852a6006074bcc207a096ecf04ebfe8e09b0148192e99be0dcb01a650
-;dbname=lcoyccnvahtbku");
+            $this->_db = new PDO('pgsql:host=ec2-34-251-245-108.eu-west-1.compute.amazonaws.com;port=5432;user=lcoyccnvahtbku;password=1d797f1852a6006074bcc207a096ecf04ebfe8e09b0148192e99be0dcb01a650
+;dbname=lcoyccnvahtbku');
         } 
 		catch (PDOException $e) {
 		    die('Erreur de connexion à la base de données : '.$e->getMessage());
